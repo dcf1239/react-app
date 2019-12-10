@@ -1,0 +1,45 @@
+
+html,body,#root,.lite,.app>div{
+    height: 100%;
+}
+body{
+    color: #333;
+}
+@header_height:42px;
+.app{
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: calc( 100% - @header_height );
+    padding:0 10px;
+}
+
+.hello{
+    height: @header_height;
+    line-height: @header_height;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.menu{
+    width: 150px;
+    background: rgba(247,247,247,0.9);
+    padding:10px 0;
+    height: fit-content;
+}
+
+.menu-list{
+    height: 32px;
+    line-height: 32px;
+    padding:0 10px;
+}
+
+.content{
+    flex: 1 1;
+
+}
+
+.book-body{
+    max-width: 900px;
+    margin: 0 auto;
+}
